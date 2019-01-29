@@ -8,10 +8,13 @@ nowServing(line) -> 1
 nowServing(line) -> 2 
 takeANumber(line) -> 3 
 
+var i = 0
+
 function takeANumber(line) {
-  var i = 0
   i++
-  return  
+  line.push(i)
+  return i
+  
 }
 
 function nowServing(katzDeliLine) {
